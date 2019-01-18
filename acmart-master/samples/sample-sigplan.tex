@@ -46,74 +46,26 @@
 
 %
 % The "title" command has an optional parameter, allowing the author to define a "short title" to be used in page headers.
-\title{The Name of the Title is Hope}
+\title{Agile Cross Team Work}
 
 %
 % The "author" command and its associated commands are used to define the authors and their affiliations.
 % Of note is the shared affiliation of the first two authors, and the "authornote" and "authornotemark" commands
 % used to denote shared contribution to the research.
-\author{Ben Trovato}
+\author{Trevor Forrey}
 \authornote{Both authors contributed equally to this research.}
-\email{trovato@corporation.com}
+\email{tforrey@asu.edu}
 \orcid{1234-5678-9012}
-\author{G.K.M. Tobin}
+\author{Aman Kaushik}
 \authornotemark[1]
 \email{webmaster@marysville-ohio.com}
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
+  \institution{Arizona State University}
   \streetaddress{P.O. Box 1212}
-  \city{Dublin}
-  \state{Ohio}
-  \postcode{43017-6221}
+  \city{Mesa}
+  \state{Arizona}
+  \postcode{85212}
 }
-
-\author{Lars Th{\o}rv{\"a}ld}
-\affiliation{%
-  \institution{The Th{\o}rv{\"a}ld Group}
-  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
-  \city{Hekla}
-  \country{Iceland}}
-\email{larst@affiliation.org}
-
-\author{Valerie B\'eranger}
-\affiliation{%
-  \institution{Inria Paris-Rocquencourt}
-  \city{Rocquencourt}
-  \country{France}
-}
-
-\author{Aparna Patel}
-\affiliation{%
- \institution{Rajiv Gandhi University}
- \streetaddress{Rono-Hills}
- \city{Doimukh}
- \state{Arunachal Pradesh}
- \country{India}}
- 
-\author{Huifen Chan}
-\affiliation{%
-  \institution{Tsinghua University}
-  \streetaddress{30 Shuangqing Rd}
-  \city{Haidian Qu}
-  \state{Beijing Shi}
-  \country{China}}
-
-\author{Charles Palmer}
-\affiliation{%
-  \institution{Palmer Research Laboratories}
-  \streetaddress{8600 Datapoint Drive}
-  \city{San Antonio}
-  \state{Texas}
-  \postcode{78229}}
-\email{cpalmer@prl.com}
-
-\author{John Smith}
-\affiliation{\institution{The Th{\o}rv{\"a}ld Group}}
-\email{jsmith@affiliation.org}
-
-\author{Julius P. Kumquat}
-\affiliation{\institution{The Kumquat Consortium}}
-\email{jpkumquat@consortium.net}
 
 %
 % By default, the full list of authors will be used in the page headers. Often, this list is too long, and will overlap
@@ -124,10 +76,17 @@
 %
 % The abstract is a short summary of the work to be presented in the article.
 \begin{abstract}
-A clear and well-documented \LaTeX\ document is presented as an article formatted for publication by ACM in 
-a conference proceedings or journal publication. Based on the ``acmart'' document class, this article presents
-and explains many of the common variations, as well as many of the formatting elements
-an author may use in the preparation of the documentation of their work.
+  % problem statement (1-2 sentences)
+  % proposed solutions (1-2 sentences)
+  % contribution method (7-8 lines)
+
+  % Experimental setup/Implementation (~ 1-2 sentences)
+  % Experimental results (~ 1-2 sentences)
+  % Explanation of results
+Agile and Scrum practices have taken over as many organization's number one way to build software.
+Although Agile practices have seen a great success, it can still be difficult to get multiple agile teams to work together.
+Thankfully, there are many strategies to aid the progress of multi-team agile companies.
+Communication, Team Structuring, Tooling, and having clear designs are all important for the success of many agile teams.
 \end{abstract}
 
 %
@@ -159,15 +118,13 @@ an author may use in the preparation of the documentation of their work.
 </ccs2012>
 \end{CCSXML}
 
-\ccsdesc[500]{Computer systems organization~Embedded systems}
-\ccsdesc[300]{Computer systems organization~Redundancy}
-\ccsdesc{Computer systems organization~Robotics}
-\ccsdesc[100]{Networks~Network reliability}
+\ccsdesc[500]{Agile Process}
+\ccsdesc[300]{Team Success}
 
 %
 % Keywords. The author(s) should pick words that accurately describe the work being
 % presented. Separate the keywords with commas.
-\keywords{datasets, neural networks, gaze detection, text tagging}
+\keywords{agile process, team collaboration, design, architecture, SER516}
 
 %
 % A "teaser" image appears between the author and affiliation information and the body 
@@ -185,11 +142,51 @@ an author may use in the preparation of the documentation of their work.
 \maketitle
 
 \section{Introduction}
-ACM's consolidated article template, introduced in 2017, provides a consistent \LaTeX\ style for use across ACM publications, and incorporates accessibility and metadata-extraction functionality necessary for future Digital Library endeavors. Numerous ACM and SIG-specific \LaTeX\ templates have been examined, and their unique features incorporated into this single new template.
+Agile has quickly become the go-to way to develop software.
+It allows developers to focus less on the process of development, and more on the customer.
+Most importantly, Agile practices allow for changes in requirements without a huge cost to development.
+Despite the success and great features of Agile, it can be difficult to implement across teams.
+The flexibility of Agile can cause a lack of communication between teams.
+Silos can form within the company where each team performs stand ups and communicates, but have no idea what other teams are doing.
+Thankfully, there are many strategies to allow multiple Agile teams to still be successful together.
 
-If you are new to publishing with ACM, this document is a valuable guide to the process of preparing your work for publication. If you have published with ACM before, this document provides insight and instruction into more recent changes to the article template.
+\section{Team Structure}
+The actual layout of an office / team working space can have an effect on the production of a software project.
+In traditional businesses, teams can be split up in a way that creates silos. 
+These silos block team members from collaborating with each other to fix a problem.
+While working on a multi-team agile project, it's important to eliminate silos, as it allows for more organic collaboration [1].
 
-The ``\verb|acmart|'' document class can be used to prepare articles for any ACM publication --- conference or journal, and for any stage of publication, from review to final ``camera-ready'' copy, to the author's own version, with {\it very} few changes to the source. 
+\section{Communication}
+Communication is one of the most important aspects when working on a multi-team agile project.
+Similar to how communication can make or break individual teams, it can have even greater effects on multi-team projects.
+There's a real risk in a multi-team project to have certain members siloed off from each other.
+By having a good communication channel, even physical siloes between developers can be overcome.
+It's important to form these bridges of communication across teams, whether it be two product owners communicating regularly, or all team members.
+By making communication convenient, teams can easily work together to move the project forward.
+
+\section{Clear Goals}
+Communication alone will not ensure a successful project, it's important to have a set of clear goals for each team.
+These goals should be publicly known, so each team knows exactly what every other team is working on.
+With each team having a defined and unique part of the project, they'll be able to work independently, and "...plan for cross-team dependencies" [2]. 
+Similar to convenient communication, having clear goals helps teams organically collaborate.
+By knowing what each team is working on, teams with similar goals can make sure they develop something that's concise and can work when combined.
+
+\section{Cross-Team Events}
+Although convenient communication and clear goals helps, they don't guarentee a sucessful project alone.
+It's important, during multi-team agile projects, to plan for cross-team communication.
+Cross-team events push teams toward collaboration through expressing the state of the project.
+These events can come in the form of: cross-team stand-ups, multiple project owners communicating, cross-team planning [2].
+
+\section{Tools}
+The right tooling can free a multi-team organization to focus on what's most important, development.
+Common collaboration tools like Jenkins, GitHub Reviews, and Automated Testing Frameworks, are just a few ways to make developing correct software convenient.
+These tools make sure teams don't step on each other's feet by wrongfully adapting another team's features.
+Build history from Jenkins can provides visuals to every team on the health of a sub project.
+Jenkins also allows for integration tests to be automatically performed, letting developers know if there recent additions have broken a part of the project.
+Reviewing code online, automated testing, and many other development tools aid in a less painful way to develop software.
+The tooling chosen between teams is important to decide when working on multi-team agile projects.
+
+\section{}
 
 \section{Template Overview}
 As noted in the introduction, the ``\verb|acmart|'' document class can be used to prepare many different kinds of documentation --- a double-blind initial submission of a full-length technical paper, a two-page SIGGRAPH Emerging Technologies abstract, a ``camera-ready'' journal article, a SIGCHI Extended Abstract, and more --- all by selecting the appropriate {\it template style} and {\it template parameters}.

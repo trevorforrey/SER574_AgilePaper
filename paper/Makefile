@@ -9,16 +9,16 @@
 PACKAGE=acmart
 
 SAMPLES = \
-	samples/sample-manuscript.tex \
-	samples/sample-acmsmall.tex \
-	samples/sample-acmlarge.tex \
-	samples/sample-acmtog.tex \
-	samples/sample-sigconf.tex \
-	samples/sample-authordraft.tex \
-	samples/sample-xelatex.tex \
-	samples/sample-sigplan.tex \
-	samples/sample-sigchi.tex \
-	samples/sample-sigchi-a.tex
+	src/sample-manuscript.tex \
+	src/sample-acmsmall.tex \
+	src/sample-acmlarge.tex \
+	src/sample-acmtog.tex \
+	src/sample-sigconf.tex \
+	src/sample-authordraft.tex \
+	src/sample-xelatex.tex \
+	src/agile-paper.tex \
+	src/sample-sigchi.tex \
+	src/sample-sigchi-a.tex
 
 
 PDF = $(PACKAGE).pdf ${SAMPLES:%.tex=%.pdf} acmguide.pdf
@@ -47,34 +47,34 @@ acmguide.pdf: $(PACKAGE).dtx $(PACKAGE).cls
 %.cls:   %.ins %.dtx
 	pdflatex $<
 
-samples/%: %
-	cp $^ samples
+src/%: %
+	cp $^ src
 
-samples/sample-acmsmall.tex: samples/sample-manuscript.tex
+src/sample-acmsmall.tex: src/sample-manuscript.tex
 	sed 's/documentclass\[manuscript,screen\]{acmart}/documentclass[acmsmall]{acmart}/' $< > $@
 
-samples/sample-acmlarge.tex: samples/sample-manuscript.tex
+src/sample-acmlarge.tex: src/sample-manuscript.tex
 	sed 's/documentclass\[manuscript,screen\]{acmart}/documentclass[acmlarge,screen]{acmart}/' $< > $@
 
-samples/sample-acmtog.tex: samples/sample-manuscript.tex
+src/sample-acmtog.tex: src/sample-manuscript.tex
 	sed 's/documentclass\[manuscript,screen\]{acmart}/documentclass[acmtog]{acmart}/' $<   > $@
 
-samples/sample-sigconf.tex: samples/sample-manuscript.tex
+src/sample-sigconf.tex: src/sample-manuscript.tex
 	sed 's/documentclass\[manuscript,screen\]{acmart}/documentclass[sigconf]{acmart}/' $< | sed 's/^%%//'  > $@
 
-samples/sample-authordraft.tex: samples/sample-manuscript.tex
+src/sample-authordraft.tex: src/sample-manuscript.tex
 	sed 's/documentclass\[manuscript,screen\]{acmart}/documentclass[sigconf,authordraft]{acmart}/' $< | sed 's/^%%//'  > $@
 
-samples/sample-xelatex.tex: samples/sample-sigconf.tex
+src/sample-xelatex.tex: src/sample-sigconf.tex
 	cp $< $@
 
-samples/sample-sigplan.tex: samples/sample-manuscript.tex
+src/agile-paper.tex: src/sample-manuscript.tex
 	sed 's/documentclass\[manuscript,screen\]{acmart}/documentclass[sigplan,screen]{acmart}/' $< | sed 's/^%%//'  > $@
 
-samples/sample-sigchi.tex: samples/sample-manuscript.tex
+src/sample-sigchi.tex: src/sample-manuscript.tex
 	sed 's/documentclass\[manuscript,screen\]{acmart}/documentclass[sigchi]{acmart}/' $< | sed 's/^%%//'  > $@
 
-samples/sample-sigchi-a.tex: samples/sample-manuscript.tex
+src/sample-sigchi-a.tex: src/sample-manuscript.tex
 	sed 's/documentclass\[manuscript,screen\]{acmart}/documentclass[sigchi-a]{acmart}/' $< | \
 	sed 's/begin{figure}\[h\]/begin{marginfigure}/' | \
 	sed 's/end{figure}/end{marginfigure}/' | \
@@ -82,10 +82,10 @@ samples/sample-sigchi-a.tex: samples/sample-manuscript.tex
 	sed 's/end{table}/end{margintable}/'   > $@
 
 
-samples/$(PACKAGE).cls: $(PACKAGE).cls
-samples/ACM-Reference-Format.bst: ACM-Reference-Format.bst
+src/$(PACKAGE).cls: $(PACKAGE).cls
+src/ACM-Reference-Format.bst: ACM-Reference-Format.bst
 
-samples/%.pdf:  samples/%.tex   samples/$(PACKAGE).cls samples/ACM-Reference-Format.bst
+src/%.pdf:  src/%.tex   src/$(PACKAGE).cls src/ACM-Reference-Format.bst
 	cd $(dir $@) && pdflatex $(notdir $<)
 	- cd $(dir $@) && bibtex $(notdir $(basename $<))
 	cd $(dir $@) && pdflatex $(notdir $<)
@@ -93,7 +93,7 @@ samples/%.pdf:  samples/%.tex   samples/$(PACKAGE).cls samples/ACM-Reference-For
 	while ( grep -q '^LaTeX Warning: Label(s) may have changed' $(basename $<).log) \
 	  do cd $(dir $@) && pdflatex $(notdir $<); done
 
-samples/sample-xelatex.pdf:  samples/sample-xelatex.tex   samples/$(PACKAGE).cls samples/ACM-Reference-Format.bst
+src/sample-xelatex.pdf:  src/sample-xelatex.tex   src/$(PACKAGE).cls src/ACM-Reference-Format.bst
 	cd $(dir $@) && xelatex $(notdir $<)
 	- cd $(dir $@) && bibtex $(notdir $(basename $<))
 	cd $(dir $@) && xelatex $(notdir $<)
@@ -112,9 +112,9 @@ clean:
 	*.ilg *.ind *.out *.lof \
 	*.lot *.bbl *.blg *.gls *.cut *.hd \
 	*.dvi *.ps *.thm *.tgz *.zip *.rpi \
-	samples/$(PACKAGE).cls samples/ACM-Reference-Format.bst \
-	samples/*.log samples/*.aux samples/*.out \
-	samples/*.bbl samples/*.blg samples/*.cut
+	src/$(PACKAGE).cls src/ACM-Reference-Format.bst \
+	src/*.log src/*.aux src/*.out \
+	src/*.bbl src/*.blg src/*.cut
 
 distclean: clean
 
@@ -129,4 +129,4 @@ zip:  all clean
 	zip -r  $(PACKAGE).zip * -x '*~' -x '*.tgz' -x '*.zip' -x CVS -x 'CVS/*'
 
 documents.zip: all
-	zip $@ acmart.pdf acmguide.pdf samples/sample-*.pdf *.cls *.bst
+	zip $@ acmart.pdf acmguide.pdf src/sample-*.pdf *.cls *.bst

@@ -5,40 +5,6 @@
 %
 % defining the \BibTeX command - from Oren Patashnik's original BibTeX documentation.
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-    
-% Rights management information. 
-% This information is sent to you when you complete the rights form.
-% These commands have SAMPLE values in them; it is your responsibility as an author to replace
-% the commands and values with those provided to you when you complete the rights form.
-%
-% These commands are for a PROCEEDINGS abstract or paper.
-\copyrightyear{2018}
-\acmYear{2018}
-\setcopyright{acmlicensed}
-\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
-\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection, June 03--05, 2018, Woodstock, NY}
-\acmPrice{15.00}
-\acmDOI{10.1145/1122445.1122456}
-\acmISBN{978-1-4503-9999-9/18/06}
-
-%
-% These commands are for a JOURNAL article.
-%\setcopyright{acmcopyright}
-%\acmJournal{TOG}
-%\acmYear{2018}\acmVolume{37}\acmNumber{4}\acmArticle{111}\acmMonth{8}
-%\acmDOI{10.1145/1122445.1122456}
-
-%
-% Submission ID. 
-% Use this when submitting an article to a sponsored event. You'll receive a unique submission ID from the organizers
-% of the event, and this ID should be used as the parameter to this command.
-%\acmSubmissionID{123-A56-BU3}
- 
-%
-% The majority of ACM publications use numbered citations and references. If you are preparing content for an event
-% sponsored by ACM SIGGRAPH, you must use the "author year" style of citations and references. Uncommenting
-% the next command will enable that style.
-%\citestyle{acmauthoryear}
 
 %
 % end of the preamble, start of the body of the document source.
@@ -70,13 +36,6 @@
 %
 % The abstract is a short summary of the work to be presented in the article.
 \begin{abstract}
-  % problem statement (1-2 sentences)
-  % proposed solutions (1-2 sentences)
-  % contribution method (7-8 lines)
-
-  % Experimental setup/Implementation (~ 1-2 sentences)
-  % Experimental results (~ 1-2 sentences)
-  % Explanation of results
 'The Agile way' of working has taken over as many organization's number one way to build products.
 Although Agile practices have seen a great success, it can still be difficult to get multiple cross-functional agile teams to work together.
 Thankfully, there are many strategies to successfully navigate through this network of interlinked agile teams.
@@ -120,7 +79,7 @@ Communication is one of the most important aspects when working on a multi-team 
 Similar to how communication can make or break individual teams, it can have even greater effects on multi-team projects.
 When you can't strike a perfect balance in the team layout, alternative forms of communication can help.
 Even physical siloes between developers can be overcome by having good communication channels.
-It's important to form these bridges of communication across teams, whether it be two product owners communicating regularly, or all team members through Slack.
+These events can come in the form of: cross-team stand-ups, multiple project owners communicating, and cross-team planning \cite{b2}.
 By making communication convenient, teams can easily work together to move the project forward.
 
 \section{Clear Goals}
@@ -130,11 +89,11 @@ With each team having a defined and unique part of the project, they'll be able 
 Similar to convenient communication, having clear goals helps teams organically collaborate.
 By knowing what each team is working on, teams with similar goals can make sure they develop something that's concise and can work when combined.
 
-\section{Cross-Team Events}
-Although convenient communication and clear goals helps, they don't guarentee a sucessful project alone.
-It's important, during multi-team agile projects, to plan for cross-team communication.
-Cross-team events push teams toward collaboration through expressing the state of the project.
-These events can come in the form of: cross-team stand-ups, multiple project owners communicating, and cross-team planning \cite{b2}.
+% \section{Cross-Team Events}
+% Although convenient communication and clear goals helps, they don't guarentee a sucessful project alone.
+% It's important, during multi-team agile projects, to plan for cross-team communication.
+% Cross-team events push teams toward collaboration through expressing the state of the project.
+% These events 
 
 \section{Tools}
 The right tooling can free a multi-team organization to focus on what's most important, development.
@@ -148,16 +107,16 @@ The tooling chosen between teams is important to decide when working on multi-te
 \section{Agile Architecture}
 \subsection{Idea}
 The key idea behind an agile architecture and design system/practice is that the existing system should remain operational for all users and at the same time should evolve to cater to new requirements.
-The overhead and delays associated with "re-architecturing" a system should be completely eliminated. From an end users' perspective the system should always be in a continuous state of flow[5].
+The overhead and delays associated with "re-architecturing" a system should be completely eliminated. From an end users' perspective the system should always be in a continuous state of flow \cite{b5}.
 The system should be designed for scalability, maintainability, testability and deployability. For example, a micro-services architecture allows for easiser testability and alllows for more decentralization but at the same time it decreases the deployability of the system (as compared to a monolithic architecture).
 \subsection{Need for Agile Architecture}
 When working on a large system with multiple stakeholders, each stakeholder will have a different investment into the solution and would measure value differently.
-Agile architecture plays a significant role in this situation. As its the architech who is responsible to meet each stakeholders' needs, create maximum value for them, maximize utilization of the project resources and for the continuous growth of the system.[6]
+Agile architecture plays a significant role in this situation. As its the architech who is responsible to meet each stakeholders' needs, create maximum value for them, maximize utilization of the project resources and for the continuous growth of the system \cite{b6}.
 It is necessary that the agile architecture be a hybrid of both "up-front design" to create a reliabile system and "forward-thinking" to meet future needs. This may not necessarily apply to all kind of systems, as a small system can work well only with "upfront design" as well.
 Large scale systems on the other hand need both, the bootstrapping nature of "forward-thinking" and the stability and reliability of "upfront-design" to be successful. When working in a network of teams it becomes important to recognise that there will always be a trade off between the two and the same would need to be communicated clearly to all stakeholders to align goals and intent and to maximize collaboration[7].
 Keeping in mind that the price of "re-architecturing" a large system may outweigh the value obtained from it, agile architecture should balance the two.
 \subsection{Agile Architecture in a Network of Agile Teams}
-For successfully creating and maintaining an agile architecture 'style' system, its important that individual contributors be allowed to provide intputs to the architecture, i.e, its important to create a feedback loop for architecture and design as well and it should not be left upto one key high ranked individual.
+For successfully creating and maintaining an agile architecture 'style' system, it's important that individual contributors be allowed to provide intputs to the architecture, i.e, its important to create a feedback loop for architecture and design as well and it should not be left upto one key high ranked individual.
 Communication is also a key aspect that not only promotes active participation from all stakeholders but also helps in identifying and streamlining the different views, intents and alignments.
 Finally, 'change' is at the core of the agile methodology. A good agile architecture should not only plan for change but should plan in a way that will best benefit the customer, the system and the company.   
 
@@ -165,12 +124,7 @@ Finally, 'change' is at the core of the agile methodology. A good agile architec
 The key to making agile work across a network of teams if to infuse 'the agile way' into the system from the ground up.
 From the initital architecture to development and testing, every phase should have open communication and a feedback loop, so that every stakeholder can actively participate.
 Active communication and feedback also allow for better alignment of of values, goals and intent across the teams and hence result in more productive collaboration.  
-
-% %
-% % The next two lines define the bibliography style to be used, and the bibliography file.
-% \bibliographystyle{ACM-Reference-Format}
-% \bibliography{sample-base}
-
+ 
 \begin{thebibliography}{00}
   \bibitem{b1} A. Crocker, R. Cross, H. K. Gardner, "How to Make Sure Agile Teams Can Work Together", Harvard Business Review, 2019. [Online]. Available: https://hbr.org/2018/05/how-to-make-sure-agile-teams-can-work-together.
   \bibitem{b2} "Collaboration Across Agile Teams", GSA Tech, 2019. [Online]. Available: \verb| https://tech.gsa.gov/guides/Collaboration_Across_Agile_Teams|

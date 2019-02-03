@@ -1,0 +1,86 @@
+<!--
+  == For your convenience, this form can be processed by EasyChair
+  == automatically. You can fill out this form offline and then upload it
+  == to EasyChair. Several review forms can be uploaded simultaneously.
+  == You can modify your reviews as many times as you want.
+  == 
+  == When filling out the review form please mind the following rules:
+  == 
+  == (1) Blocks such as this are comments. EasyChair will ignore them.
+  ==     Do not write any text into these blocks as it will be ignored.
+  ==     You can add comments to the review form or remove them.
+  == (2) Write only into the tags where instructed. Do not modify any
+  ==     tags and attributes, or the review will become unusable and will
+  ==     be rejected by EasyChair.
+  -->
+<review id="v"
+        submission="XX"
+        title=“Collaborative Work Across Cross Funtional Agile Teams”
+        authors=“Trevor Forrey, Aman Kaushik”
+        pc_member="Reviewer Name">
+<score id="v" name="Overall evaluation">
+<!--
+  == Select your choice from the options below and write its number below,
+  == before the </score> tag.
+  ==
+  == 3 strong accept
+  == 2 accept
+  == 1 weak accept
+  == 0 borderline paper
+  == -1 weak reject
+  == -2 reject
+  == -3 strong reject
+  -->
+1</score>
+<score id="v" name="Reviewer's confidence">
+<!--
+  == Select your choice from the options below and write its number below,
+  == before the </score> tag.
+  ==
+  == 5 (expert)
+  == 4 (high)
+  == 3 (medium)
+  == 2 (low)
+  == 1 (none)
+  -->
+3</score>
+<!-- ======== Review ======== -->
+<text id="v" name="Review">
+<!--
+  == Please provide a detailed review, including justification for your
+  == scores. This field is required unless you add an attachment..
+  -->
+</text>
+<text id="x" name="Confidential remarks for the program committee">
+<!--
+  == If you wish to add any remarks intended only for PC members please
+  == write them below. These remarks will only be seen by the PC members
+  == having access to reviews for this submission. They will not be sent to
+  == the authors. This field is optional..
+  -->
+  The article discussed that the key to making agile work across a network of teams if to infuse ‘the agile way’ into the system from the ground up. Each paragraph has clear topic sentence and stick to one main idea. It’s overall structure is very clear and arrange in logical sequence. From certain degree, it’s a good article. However, there are still some little problems.
+  Team structures, communication, clear goals and tools used are all important factors across agile team works. It had better too combine it or the papers looks very unorganized. Also, it’s obviously that its reference order is undisciplined and overall size exceed two pages. Most importantly, the article depict well about importance of architecture instead of relationship with design.
+  Therefore, this article is ok to accept weakly and it still has some space to edit and improve. Here, I give some advice as bellow:
+  
+  1. Remove the blank space between “Introduction” and “Team Structure”.
+  2. Citation order face some problems, it should edit the reference order in “Reference”.
+  3. Too much citation in “Introduction” part, it had better remove some and add more personal understanding, just advice.
+  4. Narrow down the parts, for example, combine part 3, 4, 5, 6 as a big topic, like important factors to collaboration across agile team works.
+  5. The article can remove some unnecessary parts to let article not exceed two pages.For example, you can just write some issue with successfully managing a network of cross-functional agile teams more simple in your own words to save the space.
+  6. The article emphasize the importance of architecture, instead of pay little attention on relationship between architecture and design. It can enrich this part.
+  7. As it’s a short article, it has too much citation. It’s better to remove some citation and replace with your own understanding.
+  8. In the reference part, it doesn’t follow same format. It should better add name and article title in reference.
+
+</text>
+<reviewer>
+  <!--
+    == If the review was written by (or with the help from) a subreviewer
+    == different from the PC member in charge, add information about
+    == the subreviewer below. Write subreviewer's first name, last name
+    == and email between the tags below.
+    -->
+  <first_name>  </first_name>
+  <last_name>   </last_name>
+  <email>  </email>
+</reviewer>
+</review>

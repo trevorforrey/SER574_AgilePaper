@@ -1,0 +1,34 @@
+<review id="v"
+        submission="XX"
+        title="Collaborative Work Across Cross Functional Agile Teams"
+        authors="Trevor Forrey and Aman Kaushik"
+        pc_member="Cecilia La Place">
+<score id="v" name="Overall evaluation">
+3
+</score>
+<score id="v" name="Reviewer's confidence">
+4
+<!-- ======== Review ======== -->
+<text id="v" name="Review">
+As a whole, the paper is concise, and ideas are easily shared and received. 
+
+I noticed in the introduction however, that the ideas mentioned and the issues (strategies?) discussed that answer the first question do not address what my main focuses for this paper should be. It is customary to (somewhere in the introduction) to detail what exactly the reader will be gaining from the paper--or, what significant impacts the paper makes that should be paid attention to. The way your introduction is structured, I first assumed the listing of common issues to be the content of your paper (in that order by the way). A second read through led me to believe the last intro sentence to be the paper outline. Instead, I beieve you may have skipped over that entirely. 
+
+If you choose to add this in your next iteration, I would emphasize the last sentence based on the structure of your next few sections for the first question. e.g. There are many strategies to allow multiple Agile teams to still be successful together, such as [main idea of Team Structure], [main idea of Communication, etc.. [Another sentence similarly structured that focuses on the second question, and how the reader should understand that section of the paper].
+
+However, your paper touches on most if not all of the common issues you mentioned throughout the paper. Not only does it provide context to issues, it also analyzes them, and provides an excellent overview of causes and remedies to them in the multi-team context.
+
+As a smaller aside, I would recommend another review of grammar especially to ensure the removal of contractions (its -> it is in particular). Minor grammar errors I noticed were spelling mistakes (if instead of is), occasionally unnecessary commas, and incomplete sentences (e.g As its
+the architech who is responsible to meet each stakeholders’
+needs, create maximum value for them, maximize utilization
+of the project resources and for the continuous growth of
+the system [6].).
+</text>
+<text id="x" name="Confidential remarks for the program committee">
+</text>
+<reviewer>
+  <first_name>  </first_name>
+  <last_name>   </last_name>
+  <email>  </email>
+</reviewer>
+</review>
